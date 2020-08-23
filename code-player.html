@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ajax</title>
+       
+        <meta charset="utf-8" />
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+       
+        <script src="jquery-ui/jquery-ui.js"></script>
+        
+        <style type="text/css">
+        #buttons{
+          
+           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #logo{
+          float: left;
+        }
+        #menu{
+          background-color:rgb(173, 190, 221);
+          margin: 0px;
+          padding: 3px;
+          height: 40px;
+        }
+         html, body{
+          padding: 0px;
+          margin: 0px;
+          height:100%;
+
+        }
+        #logo{
+          margin: auto;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 25px;
+        }
+        button{
+          float:left;
+          padding: 4px;
+          margin: 0px;
+          height: 35px;
+          background-color: #EAF0FF;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
+          font-size: 17px;
+          border-width: 1px 1px 1px 0px;
+          border-style: solid;
+          border-color: rgb(132, 137, 158);
+          outline: none;
+
+        }
+
+       
+        .left{
+          border-radius: 8px 0 0 8px;
+          border-width: 1px 1px 1px 1px;
+        }
+        .right{
+          border-radius: 0 8px 8px 0;
+        }
+        .screens{
+          height:100%;
+          width: 24%;
+          border:0px gray solid;
+          float:left;
+          
+        }
+
+        .myInput{
+          height: 100%;
+          width: 100%;
+          text-align: top;
+          background-color: white;
+          border-width: 0px;
+          resize: none;
+          outline:none;
+        }
+        #output{
+          margin: 0px;
+          height: 100%;
+          width: 100%;
+          color:black;
+        }
+        h3{
+          text-align: center;
+          padding: 0px;
+          margin: 0px;
+        }
+        .line{
+          height: 100%;
+          width: 0px;
+          float: left;
+          border-width: 1px;
+          border-style: solid;
+          border-color: lightgrey;
+          
+        }
+        textarea{
+          font-size: 18px;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        input[type=text]{
+
+   line-height: 15px;}
+
+        
+        </style>
+
+        
+		
+     
+
+    </head>
+
+    <body>
+      <div id="menu">
+        <p id="logo">CodePlayer</p>
+        <div id="buttons">
+          <button id="htmlPage" class="left">HTML</button>
+          <button id="CSSPage">CSS</button>
+          <button id="jsPage">JavaScript</button>
+          <button id="outPage" class="right">Output</button>
+        </div>
+      </div>
+
+      <div id="htmlPI" class="screens">
+        <h3 class="title">HTML</h3>
+        <textarea class="myInput" id="inputHtml"></textarea>
+
+      </div>
+      <div class="line"></div>
+
+      <div id="cssPI" class="screens">
+        <h3 class="title">CSS</h3>
+        <textarea  class="myInput" id="inputCss"></textarea>
+        
+      </div>
+      <div class="line"></div>
+      <div id="jsPI" class="screens">
+        <h3 class="title">JavaScript</h3>
+        <textarea class="myInput" id="inputJS"></textarea>
+      </div>
+      <div class="line"></div>
+
+      <div id="outputPI" class="screens">
+        <h3 class="title">Output</h3>
+        <div id="output"></div>
+      </div>
+
+
+
+
+      <script type="text/javascript">
+      $("#un").val("etsi");
+      var htmlOn=true;
+      var cssOn=true;
+      var jqOn=true;
+      var outputOn=true;
+      var openTabs=4;
+        $("#htmlPage").click(function(){
+          if(htmlOn){
+            htmlOn=false;
+            openTabs-=1;
+            $("#htmlPI").css("display","none");
+            $("#htmlPage").css("background-color","CornflowerBlue");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+          else{
+            htmlOn=true;
+            openTabs+=1;
+            $("#htmlPI").css("display","block");
+            $("#htmlPage").css("background-color","white");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+        })
+
+
+        $("#CSSPage").click(function(){
+          if(cssOn){
+            cssOn=false;
+            openTabs-=1;
+            $("#cssPI").css("display","none");
+            $("#CSSPage").css("background-color","CornflowerBlue");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+          else{
+            cssOn=true;
+            openTabs+=1;
+            $("#cssPI").css("display","block");
+            $("#CSSPage").css("background-color","#EAF0FF");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+        })
+        $("#jsPage").click(function(){
+          if(jqOn){
+            jqOn=false;
+            openTabs-=1;
+            $("#jsPI").css("display","none");
+            $("#jsPage").css("background-color","CornflowerBlue");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+          else{
+            jqOn=true;
+            openTabs+=1;
+            $("#jsPI").css("display","block");
+            $("#jsPage").css("background-color","#EAF0FF");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+        })
+        $("#outPage").click(function(){
+          if(outputOn){
+            outputOn=false;
+            openTabs-=1;
+            $("#outputPI").css("display","none");
+            $("#outPage").css("background-color","CornflowerBlue");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+
+          }
+          else{
+            outputOn=true;
+            openTabs+=1;
+            $("#outputPI").css("display","block");
+            $("#outPage").css("background-color","#EAF0FF");
+            if(openTabs==4) $(".screens").css("width","24%");
+            else if(openTabs==3)$(".screens").css("width","33%");
+            else if(openTabs==2)$(".screens").css("width","49%");
+            else if(openTabs==1)$(".screens").css("width","99%");
+          }
+        })
+
+        $(".myInput").on('input', function() {
+          $("#output").val("pipa");
+          var message="";
+          message+=$("#inputHtml").val();
+          message+="<style>" + $("#inputCss").val() +"</style>";
+          message+="<script>" + $("#inputJS").val() + "</" + "script>";
+          $("#output").html(message);
+
+        }).trigger('input');
+
+     
+     </script>
+
+    </body>
+    
+</html>

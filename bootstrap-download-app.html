@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+      #main{
+        padding-top: 50px ;
+      }
+      #imagePlace{
+        background-image: url("back.jpg");
+        background-size: 100%;
+        background-blend-mode:overlay
+        
+      }
+      .cards{
+        padding: 50px 0px;
+      }
+      .form-inline{
+        align-content: center;
+
+      }
+      
+      #downloadTheApp{
+        height: 500px;
+        padding: 200px 0 0 0; 
+        margin: 0;
+        
+      }
+      #about{
+        margin-top: 0;
+        padding-top:60px;
+      }
+    </style>
+    <title>My App</title>
+  </head>
+
+  <body class="text-center">
+   
+
+
+
+    <nav id="navbar-example2" class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">MyApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Download The App</a>
+          </li>
+          
+          
+      
+        </ul>
+
+
+        <form class="form-inline">
+          <label class="sr-only" for="inlineFormInputName2">Email</label>
+          <input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2" placeholder="Email">
+        
+          <label class="sr-only" for="inlineFormInputName2">Password</label>
+          <input type="password" class="form-control mb-2 mr-sm-2" id="inlineFormInputPassword2" placeholder="Password">
+          
+        
+          <button type="submit" class="btn btn-success mb-2">Login</button>
+        </form>
+      </div>
+    </nav>
+
+
+
+    <div id="main" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div class="jumbotron text-center" id="imagePlace">
+        <h1 class="display-4 ">My Awesome App!</h1>
+        <p class="lead">This is why YOU should download this fantastic app!</p>
+        <hr class="my-4">
+        <p>You wanna know more? Sign up to our mailing list</p>
+        
+        <form class="form-inline justify-content-center ">
+        
+        
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Your Email">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+        </form>
+      </div>
+      <h2 id="about" class="text-center"> Why This App is Awesome</h2>
+      <p class="lead text-center">Summary, once again, of you app's awesomeness</p>
+
+
+      
+
+
+      <div class="container cards">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 20rem;">
+              <img src="back1.jpg"class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 20rem;">
+              <img src="back1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 20rem;">
+              <img src="back1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h4 id="download"></h4>
+      <div class="jumbotron jumbotron-fluid bg-info" id="downloadTheApp">
+        <div class="container" >
+          <h1 class="display-4">Download The App</h1>
+          <p class="lead">Really? Why Should I?</p>
+        </div>
+      </div>
+
+
+
+     
+    </div>
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>
