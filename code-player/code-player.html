@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ajax</title>
+       
+        <meta charset="utf-8" />
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+       
+        <script src="jquery-ui/jquery-ui.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="code-player.css">
+        
+		
+     
+
+    </head>
+
+    <body>
+      <div id="menu">
+        <p id="logo">CodePlayer</p>
+        <div id="buttons">
+          <button id="htmlPage" class="left">HTML</button>
+          <button id="CSSPage">CSS</button>
+          <button id="jsPage">JavaScript</button>
+          <button id="outPage" class="right">Output</button>
+        </div>
+      </div>
+
+      <div id="htmlPI" class="screens">
+        <h3 class="title">HTML</h3>
+        <textarea class="myInput" id="inputHtml"></textarea>
+
+      </div>
+      <div class="line"></div>
+
+      <div id="cssPI" class="screens">
+        <h3 class="title">CSS</h3>
+        <textarea  class="myInput" id="inputCss"></textarea>
+        
+      </div>
+      <div class="line"></div>
+      <div id="jsPI" class="screens">
+        <h3 class="title">JavaScript</h3>
+        <textarea class="myInput" id="inputJS"></textarea>
+      </div>
+      <div class="line"></div>
+
+      <div id="outputPI" class="screens">
+        <h3 class="title">Output</h3>
+        <div id="output"></div>
+      </div>
+
+
+
+
+      <script src="code-player.js"></script>
+
+    </body>
+    
+</html>

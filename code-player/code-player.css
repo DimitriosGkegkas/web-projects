@@ -1,0 +1,97 @@
+
+        #buttons{
+          
+           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #logo{
+          float: left;
+        }
+        #menu{
+          background-color:rgb(173, 190, 221);
+          margin: 0px;
+          padding: 3px;
+          height: 40px;
+        }
+         html, body{
+          padding: 0px;
+          margin: 0px;
+          height:100%;
+
+        }
+        #logo{
+          margin: auto;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 25px;
+        }
+        button{
+          float:left;
+          padding: 4px;
+          margin: 0px;
+          height: 35px;
+          background-color: #EAF0FF;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
+          font-size: 17px;
+          border-width: 1px 1px 1px 0px;
+          border-style: solid;
+          border-color: rgb(132, 137, 158);
+          outline: none;
+
+        }
+
+       
+        .left{
+          border-radius: 8px 0 0 8px;
+          border-width: 1px 1px 1px 1px;
+        }
+        .right{
+          border-radius: 0 8px 8px 0;
+        }
+        .screens{
+          height:100%;
+          width: 24%;
+          border:0px gray solid;
+          float:left;
+          
+        }
+
+        .myInput{
+          height: 100%;
+          width: 100%;
+          text-align: top;
+          background-color: white;
+          border-width: 0px;
+          resize: none;
+          outline:none;
+        }
+        #output{
+          margin: 0px;
+          height: 100%;
+          width: 100%;
+          color:black;
+        }
+        h3{
+          text-align: center;
+          padding: 0px;
+          margin: 0px;
+        }
+        .line{
+          height: 100%;
+          width: 0px;
+          float: left;
+          border-width: 1px;
+          border-style: solid;
+          border-color: lightgrey;
+          
+        }
+        textarea{
+          font-size: 18px;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        input[type=text]{
+
+   line-height: 15px;}
+
+        
